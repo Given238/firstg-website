@@ -1,0 +1,128 @@
+
+
+.thumbnail {width:100%;
+z-index:1;}
+
+
+
+.video-title{margin-top:0;
+             font-size: 14px;
+             font-weight:500;
+             line-height:20px;
+             margin-bottom:10px;}
+
+
+
+
+
+.video-info-grid {
+    display:grid;
+    grid-template-columns: 50px 1fr;
+    
+    
+    
+}
+
+.profile-picture{width:75%;
+                 border-radius:50%;
+                 margin-right:0px;}
+
+.thumbnail-row {margin-bottom:8px;
+position:relative;}
+
+.video-creator,.video-stats {font-size:13px;
+                color:#606060;
+                }
+.video-creator{margin-bottom:6px;}
+
+.video-grid {display:grid;
+             grid-template-columns: 1fr 1fr 1fr;
+             column-gap:15px;
+             row-gap:40px;
+             }
+
+
+
+@media (max-width:700px) {
+    .video-grid {
+        grid-template-columns:1fr 1fr;
+    }
+}
+
+@media (min-width:700px) and (max-width:1200px) {
+    .video-grid {
+        grid-template-columns:1fr 1fr 1fr;
+    }
+}
+
+@media (min-width:1200px) {
+    .video-grid {
+        grid-template-columns:1fr 1fr 1fr 1fr;
+    }
+    .video-author, .video-stats {font-size:14px;}
+}
+
+@media (min-width:1200px) {
+    .video-title {font-size:16px;
+    line-height:24px;}
+}
+
+
+
+.video-time {
+            font-size:12px;
+            font-weight:500;
+            padding:4px;
+            background-color:black;
+            color:white;
+            position:absolute;
+            bottom:10px;;
+            right:8px;
+            border-radius:2px;}
+.video-info{margin-left:0px;}
+
+.video-title-link {text-decoration:none;
+color:black;}
+
+.channel-pictures {display:inline-block;
+position:relative;}
+
+.profile-tooltip {background-color:white;
+position:absolute;
+top:60px;
+padding: 15px 20px 15px 10px;
+border-radius:5px;
+box-shadow:2px 3px 10px rgba(0,0,0,0.3);
+pointer-events:none;
+display:flex;
+align-items:center;
+text-align:center;
+opacity:0;
+pointer-events:none;
+transition: opacity 0.2s;
+z-index:100;
+}
+
+.channel-pictures:hover .profile-tooltip{opacity:100;}
+
+.profile-tooltip img {width:50px;;
+border-radius:50%;
+margin-left:10px;
+margin-right:10px;}
+
+
+
+
+.tooltip-name {font-weight:bold;
+margin-bottom:5px;
+font-size:16px;}
+
+.tooltip-subscribers {font-size:14px;
+color:gray;}
+
+
+.tooltip-text {display:flex;
+flex-direction:column;
+align-items:flex-start;
+justify-content:center;
+white-space:nowrap;}
